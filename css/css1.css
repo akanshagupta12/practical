@@ -1,0 +1,13 @@
+@media(min-width:1200){
+#section-2{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#section-4{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+}
