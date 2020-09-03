@@ -19,6 +19,10 @@
     td{
         border-bottom:2px solid darkgray;
         padding:15px;
+        font-size:15px;
+    }
+    tr td{
+        height:35px;
     }
     th{
         text-align:left;
@@ -39,12 +43,16 @@
     }
     #i1 td{
         border-bottom: none;
+       
+    }
+    tbody tr:hover{
+        background-color:gray;
     }
 </style>
 <body>
     <table align="center" >
         <thead>
-        <tr> <td colspan="5" style="text-align: center;background-color:darkblue; border:none;color:white;font-size:20px;border-top-right-radius: 16px;border-top-left-radius:17px ;">
+        <tr> <td colspan="5" style="text-align: center;background-color:darkblue; border:none;color:white;font-size:20px;border-top-right-radius: 16px;border-top-left-radius:16px ;">
              Fullstack Live Practical Book
         </td></tr>
         <tr>
@@ -55,9 +63,10 @@
             <th>Tools</th>
         </tr>
     </thead>
+    <tbody>
         <tr>
             <td>1</td>
-            <td >Create a web page including HTML basic skeleton using Offline HTML editor and online Sandbox Environment</td>
+            <td width="40%">Create a web page including HTML basic skeleton using Offline HTML editor and online Sandbox Environment</td>
             <td><a href="https://akanshagupta12.github.io/practical/pages/assignment1">Practical-1</a></td>
             <td style="color: darkgreen;">Checked</td>
             <td ><i class="fa fa-pencil" aria-hidden="true"></i> <i class="fa fa-trash" aria-hidden="true"></i></td>
@@ -78,7 +87,7 @@
         </tr>
         <tr>
             <td>4</td>
-            <td>Create a website having list of all practical and their individuak practical page links</td>
+            <td>Create a website having list of all practical and their individual practical page links</td>
             <td><a href="https://akanshagupta12.github.io/practical/pages/assignment-4">Practical-4</a></td>
             <td style="color: darkgreen;">Checked</td>
             <td ><i class="fa fa-pencil" aria-hidden="true"></i> <i class="fa fa-trash" aria-hidden="true"></i></td>
@@ -119,12 +128,13 @@
             <td ><i class="fa fa-pencil" aria-hidden="true"></i> <i class="fa fa-trash" aria-hidden="true"></i></td>
         </tr>
         <tr id="i1">
-            <td>10</td>
+            <td  style="border-bottom-left-radius: 18px;">10</td>
             <td>Create a responsive side-bar Navigation Menu.</td>
             <td><a href="https://akanshagupta12.github.io/practical/pages/practical-10">Practical-10</a></td>
             <td style="color: red;">Un-Checked</td>
-            <td ><i class="fa fa-pencil" aria-hidden="true"></i> <i class="fa fa-trash" aria-hidden="true"></i></td>
+            <td  style="border-bottom-right-radius: 18px;><i class="fa fa-pencil" aria-hidden="true"></i> <i class="fa fa-trash" aria-hidden="true"></i></td>
         </tr>
+    </tbody>
     </table>
 </body>
 </html>
