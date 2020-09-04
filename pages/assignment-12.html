@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practical-12</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" >
+</head>
+<style>
+    body{
+        background-color: grey;
+    }
+    table{
+        width:40%;
+        border:5px solid white;
+        text-align: center;
+        border-collapse: collapse;
+    }
+    tr td,th{
+        border:2px solid white;
+    }
+    td i{
+        color:darkgreen;
+    }
+    th i {
+        margin-right:8px;
+    }
+    th{
+        line-height:40px ;
+        height:40px;
+    }
+    #w  i{
+        color:red;
+    }
+   tr:nth-child(even){
+       background-color:rgb(115, 238, 115) ;
+   }
+   tr a{
+       border-radius:3px;
+        background-color: rgb(104, 104, 211);
+        display: block;
+        height:25px;
+        width:80%;
+        margin:auto;
+        text-decoration:none;
+        padding-top:4px;
+        color:white;
+        transition:0.4s;
+   }
+   tr a:hover{
+       background-color: red;
+   }
+   tr{
+       height: 30px;
+   }
+   th{
+       color:rgb(104, 104, 211);
+       font-size:30px;
+   }
+   h2{
+       color:black;
+       background-color:white;
+       width:40%;
+       text-align: center;
+       margin-bottom:0;
+       margin-left:30%;
+       padding-top:10px;
+   }
+</style>
+
+<body>
+    <table align="center">
+        <h2>SELECT YOUR PLAN</h2>
+        
+        <colgroup span="1" id="i1" style="background-color:rgb(48, 182, 106);"></colgroup>
+        <colgroup span="1"  id="i2" style="background-color: rgb(141, 205, 226); "></colgroup>
+        <colgroup span="1"  id="i3" style="background-color:peachpuff"></colgroup>
+        <colgroup span="1"  id="i4" style="background-color: rgb(75, 194, 75)"></colgroup>
+        <tr>
+            <th><i class="fa fa-building" aria-hidden="true"></i>Basic</th>
+                <th><i class="fa fa-superpowers" aria-hidden="true"></i>Plus</th>
+                <th><i class="fa fa-telegram" aria-hidden="true"></i>Deluxe</th>
+                <th><i class="fa fa-tachometer" aria-hidden="true"></i>Pro</th>
+        </tr>
+        <tr style="color: white;">
+            <td style="width: 10%;">Rs 500/-</td>
+            <td style="width: 10%;">Rs 1500/-</td>
+            <td style="width: 10%;">Rs 2500/-</td>
+            <td style="width: 10%;">Rs 3500/-</td>
+        </tr>
+        <tr>
+            <td>50 pages</td>
+            <td>75 pages</td>
+            <td>Unlimited</td>
+            <td>Unlimited</td>
+        </tr>
+        <tr>
+            <td>3 users</td>
+            <td>5 users</td>
+            <td>10 users</td>
+            <td>Unlimited</td>
+        </tr>
+        <tr>
+            <td>10 Sites</td>
+            <td>25 Sites</td>
+            <td>100 Sites</td>
+            <td>Unlimited</td>
+        </tr>
+        <tr>
+            <td>50 MB</td>
+            <td>250 MB</td>
+            <td>1 GB</td>
+            <td>5 GB</td>
+        </tr>
+        <tr>
+            <td>included</td>
+            <td>included</td>
+            <td>included</td>
+            <td>included</td>
+        </tr>
+        <tr>
+            <td><i class="fa fa-check" aria-hidden="true"></i></td>
+            <td><i class="fa fa-check" aria-hidden="true"></i></td>
+            <td><i class="fa fa-check" aria-hidden="true"></i></td>
+            <td><i class="fa fa-check" aria-hidden="true"></i></td>
+        </tr>
+        <tr>
+            <td id="w"><i class="fa fa-times" aria-hidden="true" ></i></td>
+            <td><i class="fa fa-check" aria-hidden="true"></i></td>
+            <td><i class="fa fa-check" aria-hidden="true"></i></td>
+            <td><i class="fa fa-check" aria-hidden="true"></i></td>
+        </tr>
+        <tr>
+            <td id="w"><i class="fa fa-times" aria-hidden="true" ></i></td>
+            <td id="w"><i class="fa fa-times" aria-hidden="true" ></i></td>
+            <td><i class="fa fa-check" aria-hidden="true"></i></td>
+            <td><i class="fa fa-check" aria-hidden="true"></i></td>
+        </tr>
+        <tr >
+            <td id="w"><i class="fa fa-times" aria-hidden="true" ></i></td>
+            <td id="w"><i class="fa fa-times" aria-hidden="true"></i></td>
+            <td id="w"><i class="fa fa-times" aria-hidden="true" ></i></td>
+            <td><i class="fa fa-check" aria-hidden="true" ></i></td>
+        </tr>
+        <tr style="height: 40px;">
+            <td><a href="">Sign Up</a></td>
+            <td><a href="">Sign Up</a></td>
+            <td>
+                <a href="">Sign Up</a>
+            </td>
+            <td>
+                <a href="">Sign Up</a>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
