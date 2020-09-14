@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Footer</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" >
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    .content{
+        height:100px;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        line-height: 100px;
+    }
+    footer{
+        background-color: black;
+        color:white;
+    }
+    .sec-1 {
+        margin: 0px 0px 20px 0px;
+        display: flex;     
+        flex-direction: row;
+        justify-content: space-between;
+        padding-top:10px;
+        padding-left:15px;
+        padding-right:15px;
+        
+    }
+    .sec-1 ul{
+        list-style: none;
+    }
+    .sec-1 a{
+        text-decoration: none;
+    }
+    .sec-1 ul a,i{
+        color:grey;
+    }
+    .s1{
+     width:40%;   
+    }
+    .sec-1  a:hover{
+        color:goldenrod;
+    }
+    .sec-1 li{
+        transition: 0.4s;
+    }
+    .s1 p{
+        text-align: justify;
+    }
+    .sec-1 li{
+        margin-top:3px;
+    }
+    .sec-2{
+        margin: 30px 0px 30px 0px;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+    }
+    .sec-2 a{
+        margin-left:30px;
+        background-color: red;
+        border-radius :35px;
+        width: 10%;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        text-decoration: none;
+        color:white;
+        font-size:18px;
+    }
+    .sec-2 a:hover{
+        background-color:orangered;
+    }
+    .sec-3{
+        margin: 10px 0px 10px 0px;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+    }
+    .sec-3 i{
+       margin-right: 20px;
+        background-color:white;
+        width:30px;
+        height:30px;
+        border-radius:50%;
+        line-height:30px;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        cursor: pointer;
+        font-size:20px;
+    }
+    .sec-3 i:nth-child(1):hover{
+        background-color:blue;
+        color:black;
+    }
+    .sec-3 i:nth-child(2):hover{
+        background-color:palevioletred;
+        color:black;
+    }
+    .sec-3 i:nth-child(3):hover{
+        background-color:peachpuff;
+        color:black;
+    }
+    .sec-3 i:nth-child(4):hover{
+        background-color:skyblue;
+        color:black;
+    }
+    .sec-3 i:nth-child(5):hover{
+        background-color:lightpink;
+        color:black;
+    }
+    .sec-4{
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        margin:10px 0px 0px 0px;
+        padding-bottom: 10px;
+    }
+    .sec-4 a{
+        text-decoration: none;
+        color:white;
+    }
+    .sec-4 p:hover{
+        border-bottom:2px solid goldenrod;
+     cursor: pointer;
+    }
+    .sec-4 a:hover{
+        color:gold;
+    }
+    @media(max-width:765px){
+        .sec-1 {
+        margin: 0px 0px 20px 0px;
+        padding-top:20px;
+        display: flex;
+        flex-wrap: wrap;     
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .sec-1 ul{
+        list-style: none;
+    }
+    .sec-1 a{
+        text-decoration: none;
+    }
+    .sec-1 ul a,i{
+        color:grey;
+    }
+    .s1{
+     width:100%;
+     margin-bottom:20px;
+    }
+    .sec-1  a:hover{
+        color:goldenrod;
+    }
+    .sec-1 li{
+        transition: 0.4s;
+    }
+    .s1 p{
+        text-align: justify;
+    }
+    .sec-2 a{
+        width:20%;
+
+    }
+    }
+    @media(max-width:480px){
+        .sec-1 {
+        margin: 0px 0px 20px 0px;
+        padding-top:20px;
+    }
+    .sec-1 ul{
+        list-style: none;
+    }
+    .sec-1 a{
+        text-decoration: none;
+    }
+    .sec-1 ul a,i{
+        color:grey;
+    }
+    .s1{
+     width:100%;   
+     margin-bottom:20px;
+    }
+    .sec-1  a:hover{
+        color:goldenrod;
+    }
+    .sec-1 li{
+        transition: 0.4s;
+    }
+    .s1 p{
+        text-align: justify;
+    }
+    .sec-2 a{
+        width:30%;
+
+    }
+    .s2,.s3,.s4{
+        width:100%;
+        margin-bottom:20px;
+    }
+    }
+</style>
+<body>
+    <section class="content">
+        <h1>Content Area</h1>
+    </section>
+    <footer>
+        <section class="sec-1">
+            <section class="s1">
+                <h2>About</h2>
+               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem optio reprehenderit nostrum autem aliquam voluptates illum mollitia, non et. Voluptatem corrupti voluptatum non nam numquam rem velit officia ducimus facere deserunt dolore incidunt, nihil accusamus culpa possimus similique id quae sequi quia quos nesciunt a? Labore eligendi iusto unde accusantium, impedit eum nisi possimus voluptatibus excepturi laboriosam ullam, deserunt ipsum?</p> 
+            </section>
+            <section class="s2">
+                <h2>Categories</h2>
+                <ul>
+                    <li><a href="">C</a></li>
+                    <li><a href="">UI DESIGN</a></li>
+                    <li><a href="">PHP</a></li>
+                    <li><a href="">JAVA</a></li>
+                    <li><a href="">ANDROID</a></li>
+                </ul>
+            </section>
+            <section class="s3">
+                <h2>Quick Links</h2>
+                <ul>
+                    <li><a href="#">About us</a></li>
+                    <li><a href="#">Contact us</a></li>
+                    <li><a href="#">Contribute</a></li>
+                    <li><a href="#">Java</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                </ul>
+            </section>
+            <section class="s4">
+                <h2>Contact</h2>
+                <ul>
+                    <li><a href="#"><i class="fa fa-home"></i>SCO-75,Chandigarh,India</a></li>
+                    <li><a href="#"><i class="fa fa-envelope"></i>betalabsindia@gmail.com</a></li>
+                    <li><a href="#"><i class="fa fa-mobile"></i>Mobile:9201384627</a></li>
+                    <li><a href="#"><i class="fa fa-facebook-official"></i>betalabsindia</a></li>
+                </ul>
+            </section>
+        </section>
+        <hr>
+        <section class="sec-2">
+            <p>
+                Register for Free
+            </p>
+            <a href="#">SIGN UP</a>
+        </section>
+        <hr>
+        <section class="sec-3">
+            <i class="fa fa-facebook" aria-hidden="true"></i>
+            <i class="fa fa-instagram" aria-hidden="true"></i>
+            <i class="fa fa-google-plus" aria-hidden="true"></i>
+            <i class="fa fa-twitter" aria-hidden="true"></i>
+            <i class="fa fa-linkedin" aria-hidden="true"></i>
+        </section>
+        <hr>
+        <section class="sec-4">
+            <p>
+                Copyright©2020 All Rights Reserved by <a href="">Beta-labs</a>
+            </p>
+        </section>
+    </footer>
+</body>
+</html>
