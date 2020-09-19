@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practical-14</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" >
+</head>
+<style>
+    *{
+        margin:0;
+        padding:0;
+    }
+    h1{
+        margin-top:10px;
+        text-align: center;
+        color: rgb(165, 7, 7);
+        font-size:50px;
+    }
+    body{
+        background-color: gray;
+    }
+    #main{
+        margin-top:50px;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    .forms{
+        background-color: white;
+        float: left;
+        height:400px;
+        width:30%;
+        position: relative;
+    }
+    .forms input{
+        border:none;
+        border-bottom:0.5px solid gray;
+        margin-left:20px;
+        margin-bottom: 20px;
+        outline: none;
+        width:80%;
+    }
+    #f2 #chk{
+        width: auto;
+    }
+    .forms label{
+        margin-left:20px;
+    }
+    #f1 #header{
+        height:140px;
+        background:linear-gradient(to right,yellow,orange,red);
+        color:white;
+        font-size:25px;
+        margin-bottom: 30px;
+    }
+    #f1 h2{
+        text-align:center;
+        padding-top:5px;
+    }
+    #f1 .social-icons i{
+        margin:0px 10px;
+    }
+    #f1 p{
+        float: right;
+        margin-right:10px;
+    }
+    #f1 .login{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    #f1 .social-icons{
+        margin-top:50px;
+        display: flex;
+        justify-content:center;
+        align-items: center;
+    }
+    .forms a{
+        background-color:gray;
+        border-radius:40px;
+        transition: 0.4s;
+        color:white;
+        font-size:15px;
+        width:30%;
+        display: flex;
+        justify-content: center;
+        align-items:center;
+        text-decoration: none;
+        height:30px;
+    }
+    #f2 h2{
+        color:deeppink;
+        text-align: center;
+        padding-top:10px;
+        margin-bottom:30px;
+    }
+    #f2 .signup{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    #f2 a{
+        background-color:deeppink;
+    }
+    #f2 .social-icons{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color:rgb(93, 93, 201);
+        height: 70px;
+        position:absolute;
+        bottom: 0;
+        width: 100%;
+    }
+    #f2 .social-icons i{
+        margin:0px 10px;
+        font-size:30px;
+        color:white;
+    }
+    #f3 h2{
+        text-align: center;
+        padding-top:20px;
+        margin-bottom: 30px;
+    }
+    #f3 p{
+        float: right;
+        margin-right:10px;
+    }
+    #f3 a{
+        width:80%;
+        background-color:blue;
+        margin: auto;
+    }
+    #f3 #p1{
+        float: none;
+         text-align: center;
+    }
+    #f3 .social-icons{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 40px;
+    }
+    #f3 .social-icons i{
+        margin:0px 30px;
+        font-size:30px;
+        color:skyblue;
+        background-color: white;
+        border-radius:20px;
+        height:40px;
+        width:30%;
+        box-shadow: 0px 2px 1px 0px skyblue;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .forms input:hover{
+        border-bottom:0.5px solid skyblue;
+        color: skyblue;
+        padding-bottom: 10px;
+    }
+@media(max-width:900px){
+    #main{
+        margin-top:50px;
+        display: unset;
+    }
+    .forms{
+        background-color: white;
+        float: unset;
+        margin:auto;
+        margin-bottom:30px;
+        height:400px;
+        width:50%;
+        position: relative;
+    }
+}
+@media(max-width:550px){
+    #main{
+        margin-top:50px;
+        display: unset;
+    }
+    .forms{
+        background-color: white;
+        float: unset;
+        margin:auto;
+        margin-bottom:30px;
+        height:400px;
+        width:80%;
+        position: relative;
+    }
+}
+@media(max-width:360px){
+    #main{
+        margin-top:50px;
+        display: unset;
+    }
+    .forms{
+        background-color: white;
+        float: unset;
+        margin:auto;
+        margin-bottom:30px;
+        height:400px;
+        width:100%;
+        position: relative;
+    }
+    #f1 .login{
+        display:unset;
+    }
+    #f1 a{
+        margin: auto;
+        margin-bottom:10px;
+    }
+    #f2 .signup{
+        display:unset;
+    }
+    #f2 a{
+        margin: auto;
+    }
+    #f2 .signup p{
+    text-align:center;
+    }
+}
+</style>
+<body>
+    <h1>Forms Templates</h1>
+    <div id="main">
+    <div class="forms" id="f1">
+        <form action="">
+            <div id="header">
+            <h2>Log in</h2>
+            <div class="social-icons">
+                <i class="fa fa-facebook" aria-hidden="true"></i>
+                <i class="fa fa-instagram" aria-hidden="true"></i>
+                <i class="fa fa-twitter" aria-hidden="true"></i>
+            </div>
+        </div>
+        <label for="">Your email</label>
+        <br>
+        <input type="email" name="email" id="">
+        <br/>
+        <label for="">Your Password</label>
+        <br>
+        <input type="password" name="pword" id="" >
+        <br/>
+        <br>
+        <p>Forgot <b>Password?</b></p>
+    <br/>
+    <br>
+        <div class="login">
+            <a href="">LOG IN </a>
+            <p>Don't have an account? <b>Sign up</b></p>
+        </div>
+    </form>
+    </div>
+    <div class="forms" id="f2">
+        <form action="">
+            <h2>Sign Up</h2>
+            <label for="">Your email</label>
+        <br>
+            <input type="email" name="email" id="" >
+        <br/>
+        <label for="">Your Password</label>
+        <br>
+        <input type="password" name="pword" id="" >
+        <br/><br>
+        <p>   <input type="checkbox" id="chk">    Accept the <span style="color: skyblue;">Terms and conditions</span></p>
+       <br><br>
+        <div class="signup">
+            <a href="">SIGN UP </a>
+            <p>Don't have an account? <span style="color: skyblue;"><b>Log in</b></span> </p>
+        </div>
+        <div class="social-icons">
+            <i class="fa fa-facebook" aria-hidden="true"></i>
+            <i class="fa fa-instagram" aria-hidden="true"></i>
+            <i class="fa fa-twitter" aria-hidden="true"></i>
+        </div>
+    </form>
+    </div>
+    <div class="forms" id="f3">
+        <form action="">
+            <h2>Sign in</h2>
+            <label for="">Your email</label>
+        <br>
+            <input type="email" name="email" id="" >
+            <br/>
+            <label for="">Your Password</label>
+            <br>
+            <input type="password" name="pword" id="">
+            <br/><br>
+            <p><span style="color: skyblue;">Forgot Password?</span></p>
+            <br><br>
+            <a href="">SIGN IN</a>
+            <br>
+            <p id="p1"> or sign up with</p>
+            <div class="social-icons">
+                <i class="fa fa-facebook" aria-hidden="true"></i>
+                <i class="fa fa-instagram" aria-hidden="true"></i>
+                <i class="fa fa-twitter" aria-hidden="true"></i>
+            </div>
+        </form>
+    </div>
+    </div>
+</body>
+</html>
