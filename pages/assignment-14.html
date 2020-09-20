@@ -77,8 +77,10 @@
         justify-content:center;
         align-items: center;
     }
+    #f1 input[type='submit']{
+        background-color: gray;
+    }
     .forms input[type='submit']{
-        background-color:gray;
         border-radius:40px;
         transition: 0.4s;
         color:white;
@@ -160,11 +162,20 @@
         justify-content: center;
         align-items: center;
     }
-    /*.forms input:hover{
-        border-bottom:0.5px solid skyblue;
+    .forms input[type='email']:hover{
+        border-bottom:2px solid skyblue;
         color: skyblue;
-        padding-bottom: 10px;
-    }*/
+        padding-top: 10px;
+    }
+     .forms input[type='password']:hover{
+        border-bottom:2px solid skyblue;
+        color: skyblue;
+        padding-top: 10px;
+    }
+    .forms input[type='submit']:hover{
+        color:black;
+        cursor:pointer;
+    }
 
 </style>
 <body>
