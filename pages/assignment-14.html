@@ -24,28 +24,29 @@
         margin-top:50px;
         display: flex;
         justify-content: space-evenly;
-        align-items: center;
+        flex-direction: row;
+        flex-wrap: wrap;
     }
     .forms{
         background-color: white;
-        float: left;
         height:400px;
-        width:30%;
+        width:350px;
+        margin-bottom:30px;
+        margin-left:15px;
+        margin-right:15px;
         position: relative;
     }
     .forms input{
         border:none;
         border-bottom:0.5px solid gray;
         margin-left:20px;
-        margin-bottom: 20px;
+        margin-bottom: 30px;
         outline: none;
+        padding-bottom:10px;
         width:80%;
     }
     #f2 #chk{
         width: auto;
-    }
-    .forms label{
-        margin-left:20px;
     }
     #f1 #header{
         height:140px;
@@ -61,14 +62,14 @@
     #f1 .social-icons i{
         margin:0px 10px;
     }
-    #f1 p{
-        float: right;
-        margin-right:10px;
-    }
     #f1 .login{
         display: flex;
         justify-content: space-evenly;
         align-items: center;
+    }
+    #f1 p{
+        text-align: right;
+        margin-right:10px;
     }
     #f1 .social-icons{
         margin-top:50px;
@@ -76,7 +77,7 @@
         justify-content:center;
         align-items: center;
     }
-    .forms a{
+    .forms input[type='submit']{
         background-color:gray;
         border-radius:40px;
         transition: 0.4s;
@@ -87,28 +88,31 @@
         justify-content: center;
         align-items:center;
         text-decoration: none;
+        margin-bottom: 0;
         height:30px;
+        padding:5px;
     }
     #f2 h2{
         color:deeppink;
         text-align: center;
         padding-top:10px;
-        margin-bottom:30px;
+        margin-bottom:50px;
     }
     #f2 .signup{
         display: flex;
         justify-content: space-evenly;
         align-items: center;
     }
-    #f2 a{
+    #f2 input[type='submit']{
         background-color:deeppink;
     }
     #f2 .social-icons{
+        margin-top:10px;
         display: flex;
         justify-content: center;
         align-items: center;
         background-color:rgb(93, 93, 201);
-        height: 70px;
+        height: 80px;
         position:absolute;
         bottom: 0;
         width: 100%;
@@ -127,10 +131,11 @@
         float: right;
         margin-right:10px;
     }
-    #f3 a{
+    #f3 input[type='submit']{
         width:80%;
         background-color:blue;
-        margin: auto;
+        margin:  40px auto 20px auto;
+        padding:5px;
     }
     #f3 #p1{
         float: none;
@@ -140,7 +145,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        margin-top: 40px;
+        margin-top: 20px;
     }
     #f3 .social-icons i{
         margin:0px 30px;
@@ -155,72 +160,12 @@
         justify-content: center;
         align-items: center;
     }
-    .forms input:hover{
+    /*.forms input:hover{
         border-bottom:0.5px solid skyblue;
         color: skyblue;
         padding-bottom: 10px;
-    }
-@media(max-width:900px){
-    #main{
-        margin-top:50px;
-        display: unset;
-    }
-    .forms{
-        background-color: white;
-        float: unset;
-        margin:auto;
-        margin-bottom:30px;
-        height:400px;
-        width:50%;
-        position: relative;
-    }
-}
-@media(max-width:550px){
-    #main{
-        margin-top:50px;
-        display: unset;
-    }
-    .forms{
-        background-color: white;
-        float: unset;
-        margin:auto;
-        margin-bottom:30px;
-        height:400px;
-        width:80%;
-        position: relative;
-    }
-}
-@media(max-width:360px){
-    #main{
-        margin-top:50px;
-        display: unset;
-    }
-    .forms{
-        background-color: white;
-        float: unset;
-        margin:auto;
-        margin-bottom:30px;
-        height:400px;
-        width:100%;
-        position: relative;
-    }
-    #f1 .login{
-        display:unset;
-    }
-    #f1 a{
-        margin: auto;
-        margin-bottom:10px;
-    }
-    #f2 .signup{
-        display:unset;
-    }
-    #f2 a{
-        margin: auto;
-    }
-    #f2 .signup p{
-    text-align:center;
-    }
-}
+    }*/
+
 </style>
 <body>
     <h1>Forms Templates</h1>
@@ -235,20 +180,17 @@
                 <i class="fa fa-twitter" aria-hidden="true"></i>
             </div>
         </div>
-        <label for="">Your email</label>
-        <br>
-        <input type="email" name="email" id="">
+        <div>
+        <input type="email" name="email" id="" placeholder="your email">
         <br/>
-        <label for="">Your Password</label>
-        <br>
-        <input type="password" name="pword" id="" >
+        <input type="password" name="pword" id="" placeholder="your password" >
         <br/>
-        <br>
+    </div>
         <p>Forgot <b>Password?</b></p>
     <br/>
     <br>
         <div class="login">
-            <a href="">LOG IN </a>
+            <input type="submit" value="login">
             <p>Don't have an account? <b>Sign up</b></p>
         </div>
     </form>
@@ -256,18 +198,16 @@
     <div class="forms" id="f2">
         <form action="">
             <h2>Sign Up</h2>
-            <label for="">Your email</label>
-        <br>
-            <input type="email" name="email" id="" >
-        <br/>
-        <label for="">Your Password</label>
-        <br>
-        <input type="password" name="pword" id="" >
-        <br/><br>
+            <div>
+                <input type="email" name="email" id="" placeholder="your email">
+                <br/>
+                <input type="password" name="pword" id="" placeholder="your password" >
+                <br/>
+           
         <p>   <input type="checkbox" id="chk">    Accept the <span style="color: skyblue;">Terms and conditions</span></p>
-       <br><br>
+    </div>
         <div class="signup">
-            <a href="">SIGN UP </a>
+            <input type="submit" value="Sign Up">
             <p>Don't have an account? <span style="color: skyblue;"><b>Log in</b></span> </p>
         </div>
         <div class="social-icons">
@@ -280,19 +220,16 @@
     <div class="forms" id="f3">
         <form action="">
             <h2>Sign in</h2>
-            <label for="">Your email</label>
-        <br>
-            <input type="email" name="email" id="" >
-            <br/>
-            <label for="">Your Password</label>
+            <div>
+                <input type="email" name="email" id="" placeholder="your email">
+                <br/>
+                <input type="password" name="pword" id="" placeholder="your password" >
+                <br/>
+            </div>
+            <p><span style="color: skyblue;"> Forgot <b>Password?</b></span></p>
+            <input type="submit" value="Sign in">
             <br>
-            <input type="password" name="pword" id="">
-            <br/><br>
-            <p><span style="color: skyblue;">Forgot Password?</span></p>
-            <br><br>
-            <a href="">SIGN IN</a>
-            <br>
-            <p id="p1"> or sign up with</p>
+            <p id="p1"> <b>or sign in with</b></p>
             <div class="social-icons">
                 <i class="fa fa-facebook" aria-hidden="true"></i>
                 <i class="fa fa-instagram" aria-hidden="true"></i>
