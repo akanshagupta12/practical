@@ -1,0 +1,31 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: gray;
+}
+h1{
+    color:white;
+    text-align: center;
+    font-size: 50px;
+}
+p{
+    color:yellow;
+    font-size: 40px;
+}
+.button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+button{
+    display: inline-block;
+    height:80px;
+    width: 80px;
+    background-color: yellow;
+    outline: none;
+    font-size:40px;
+    margin:0px 40px  0px 40px;
+}
+button:hover{
+    cursor:pointer;
+}

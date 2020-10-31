@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/assignment15.css">
+    <title>
+        Practical-15
+    </title>
+</head>
+<body>
+    <h1>COUNTER</h1>
+    <div class="button">
+        <button id='btn1'>- </button>
+        <p>
+            0
+        </p>
+       <button id='btn2'>+</button>
+    </div>
+    <script>
+        var num=0;
+        var butn1= document.getElementById("btn1");
+        var butn2=document.getElementById("btn2");
+        var p=document.querySelector('p');
+        butn1.onclick=button1;
+        butn2.onclick=button2;
+        if(num==0){
+        butn1.disabled=true;
+        }
+        function button1(){
+            num -=1;
+            p.innerHTML=num;
+        if(num==0)
+            butn1.disabled=true;
+        }
+        function button2(){
+            num ++;
+            p.innerHTML=num;
+            butn1.disabled=false;
+        }
+       
+    </script>
+</body>
+</html>
