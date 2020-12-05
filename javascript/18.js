@@ -16,9 +16,7 @@ function checkInput() {
         showError(username, "Username can not be blank");
     } else if (!isUsernameValid(usernameValue)) {
         showError(username, "Username is not valid");
-    } else {
-        showSuccess(username);
-    }
+    } 
     const emailValue = email.value.trim();
     if (emailValue === '') {
         showError(email, "Email can not be blank");

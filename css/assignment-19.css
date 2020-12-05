@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: lightgray;
+    height:100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Dancing Script', cursive;
+}
+.container{
+    background-color: white;
+    width:360px;
+    position: relative;
+    height: 420px;
+    border-radius:20px;
+    overflow: hidden;
+}
+form{
+    position: absolute;
+    left:40px;
+    transition: 0.5;
+    width:280px;
+}
+#form-2{
+    left:450px;
+}
+#form-3{
+    left:450px;
+}
+form h2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding:20px 0px;
+    color:gray;
+}
+form input{
+    width:100%;
+    font-size:15px;
+    margin:25px 0px;
+    outline:none;
+    background-color:unset;
+    border:none;
+    color:gray;
+    border-bottom: 1px solid black;
+}
+.btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+button{
+    background-color: crimson;
+    font-size:20px;
+    outline:none;
+    border:none;
+    border-radius:5px;
+    padding:5px 20px;
+    margin:20px;
+}
+.row{
+    height: 40px;
+    display:flex;
+    position: relative;
+    align-items: center;
+}
+.col{
+    width: 120px;
+    display:flex;
+    justify-content: center;
+    align-items: center; 
+    z-index: 1;
+  }
+  #progress{
+      width: 120px;
+      height:100%;
+      position: absolute;
+      background-color: crimson;
+      transition: 1s;
+  }
+  #progress::after{
+      content: '';
+      position: absolute;
+      right:-20px;
+      top:0px;
+      border-bottom:20px solid transparent;
+      border-left:20px solid crimson;
+      border-top:20px solid transparent;
+  }
